@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'time calc test', url: 'https://github.com/HerraHyy/TimeCalculator.git'
+                checkout scm
             }
         }
 
